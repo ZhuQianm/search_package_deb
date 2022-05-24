@@ -31,9 +31,9 @@ def search_pkg(job):
             depends = a[b + 1]
             filename = a[b + 2].lstrip('Filename: ')
     except:
-        print('软件不存在')
-    return depends, filename
+        exit()
 
+    return depends, filename
 
 
 
